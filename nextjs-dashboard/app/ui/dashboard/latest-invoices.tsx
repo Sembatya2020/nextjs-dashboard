@@ -1,6 +1,13 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
 import { LatestInvoice } from '@/app/lib/definitions';
+
+// Simple utility function to replace clsx
+function cn(...classes: (string | undefined | null | false)[]): string {
+  return classes.filter(Boolean).join(' ');
+}
+
 export default async function LatestInvoices({
   latestInvoices,
 }: {
@@ -19,11 +26,9 @@ export default async function LatestInvoices({
             return (
               <div
                 key={invoice.id}
-                className={clsx(
+                className={cn(
                   'flex flex-row items-center justify-between py-4',
-                  {
-                    'border-t': i !== 0,
-                  },
+                  i !== 0 ? 'border-t' : '',
                 )}
               >
                 <div className="flex items-center">

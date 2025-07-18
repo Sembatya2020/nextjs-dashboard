@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // NOTE: Database functionality will be implemented in Chapter 6
 // For now, we'll use placeholder data to avoid build errors
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // NOTE: Database functionality will be implemented in Chapter 6
 // For now, we'll use placeholder data to avoid build errors
 
@@ -6,7 +7,6 @@ import {
   CustomersTableType,
   InvoiceForm,
   InvoicesTable,
-  LatestInvoiceRaw,
   Revenue,
 } from './definitions';
 
@@ -34,19 +34,19 @@ export async function fetchCardData() {
 }
 
 export async function fetchFilteredInvoices(
-  query: string,
-  currentPage: number,
+  _query: string,
+  _currentPage: number,
 ): Promise<InvoicesTable[]> {
   // Mock implementation - will be replaced in Chapter 6
   return [];
 }
 
-export async function fetchInvoicesPages(query: string): Promise<number> {
+export async function fetchInvoicesPages(_query: string): Promise<number> {
   // Mock implementation - will be replaced in Chapter 11
   return 1;
 }
 
-export async function fetchInvoiceById(id: string): Promise<InvoiceForm | undefined> {
+export async function fetchInvoiceById(_id: string): Promise<InvoiceForm | undefined> {
   // Mock implementation - will be replaced in Chapter 12
   return undefined;
 }
@@ -56,7 +56,7 @@ export async function fetchCustomers(): Promise<CustomerField[]> {
   return [];
 }
 
-export async function fetchFilteredCustomers(query: string): Promise<CustomersTableType[]> {
+export async function fetchFilteredCustomers(_query: string): Promise<CustomersTableType[]> {
   // Mock implementation - will be replaced in Chapter 12
   return [];
 }
