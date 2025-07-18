@@ -8,11 +8,11 @@ import { Revenue } from '@/app/lib/definitions';
 // https://airbnb.io/visx/
 
 export default async function RevenueChart({
-  revenue: _revenue,
+  revenue,
 }: {
   revenue: Revenue[];
 }) {
-  // NOTE: Uncomment this code in Chapter 7
+  // NOTE: Uncomment this code in Chapter 7is code in Chapter 7
 
   // const chartHeight = 350;
   // const { yAxisLabels, topLabel } = generateYAxis(revenue);

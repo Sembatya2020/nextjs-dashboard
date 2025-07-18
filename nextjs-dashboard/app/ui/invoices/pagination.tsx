@@ -1,6 +1,8 @@
 'use client';
 
-export default function Pagination({ totalPages: _totalPages }: { totalPages: number }) {
+export default function Pagination({ 
+  totalPages 
+}: { totalPages: number }) {
   // NOTE: Uncomment this code in Chapter 11
 
   // const generatePagination = require('@/app/lib/utils').generatePagination;
