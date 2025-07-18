@@ -8,7 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
-  const pathname = typeof window !== "undefined" ? window.location.pathname : "/";
+  const pathname = usePathname();
   return (
     <nav className="flex flex-col gap-3 w-full mt-2">
       {navLinks.map((link) => (
