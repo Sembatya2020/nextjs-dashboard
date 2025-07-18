@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
-import { LatestInvoice } from '@/app/lib/definitions';
+import { LatestInvoice } from '../../lib/definitions';
 
 // Simple utility function to replace clsx
 function cn(...classes: (string | undefined | null | false)[]): string {
