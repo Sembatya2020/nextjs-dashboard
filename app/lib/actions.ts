@@ -9,6 +9,15 @@ import { AuthError } from 'next-auth';
 
 // Database connection
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+export type State = {
+  errors?: {
+    customerId?: string[];
+    amount?: string[];
+    status?: string[];
+  };
+  message?: string | null;
+};
+ 
 
 // Form schema for creating and updating invoices
 const FormSchema = z.object({
